@@ -1,0 +1,93 @@
+body{
+    background: linear-gradient(135deg, #757575 0%, #ffffff 100%);
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    text-align: center;
+}
+
+main div{
+    font-family: sans-serif;
+    max-width: 600px;
+    font-size: 18px;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+img{
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+
+button{
+    background-color: #55555534;
+    border: solid 2px black;
+    border-radius: 8px;
+    padding: 10px 14px;
+    transition: all 0.3s ease;
+}
+
+button:hover{
+    background-color: #a8a8a8;
+    transform: scale(1.2);
+}
+
+
+@media (max-width: 768px) {
+    main div {
+        max-width: 90%;
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    img {
+        max-width: 80%;
+        border-radius: 30px;
+    }
+
+    h1 {
+        font-size: 24px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    main div {
+        font-size: 14px;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    button {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+}

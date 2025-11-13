@@ -1,0 +1,123 @@
+body{
+    background: linear-gradient(135deg, #757575 0%, #ffffff 100%);
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav{
+    width: 90%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+button{
+    background-color: #55555534;
+    border: solid 2px black;
+    border-radius: 8px;
+    padding: 8px 12px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+main, .container-recetas{
+    font-family: sans-serif;
+    width: 900px;
+    font-size: 18px;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.container-desayunos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 2rem;
+}
+
+img{
+    max-width: 250px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+}
+
+/* 🔹 RESPONSIVE DESIGN 🔹 */
+@media (max-width: 1024px) {
+    main, .container-recetas {
+        width: 90%;
+        font-size: 17px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container-desayunos {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    img {
+        max-width: 80%;
+        border-radius: 30px;
+    }
+
+    a {
+        font-size: 18px;
+    }
+
+    button {
+        padding: 6px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    main, .container-recetas {
+        width: 95%;
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .container-desayunos {
+        margin: 1rem 0;
+    }
+
+    img {
+        max-width: 100%;
+        border-radius: 20px;
+    }
+
+    button {
+        width: 80%;
+    }
+}
